@@ -431,7 +431,7 @@ span {
 }
 .proyectos-items:hover{
     border: 3px solid var(--main-color);
-    transform: translate(-10px)scale(1.03);
+    transform: scale(1.05);
     box-shadow: 0 0 50px var(--main-color);
 }
 
