@@ -335,56 +335,50 @@ span {
     margin-bottom: 5rem;
     color: white;
 }
-.contenedor-skills{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  align-items: center;
-  gap: 2rem;
+.contenedor-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
 }
-.box-skills{
+
+.box-skills {
     background-color: var(--main-color);
-    height: 300px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 2rem;
 }
-.box-skills:hover{
+
+.box-skills:hover {
     background: white;
     color: black;
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
-.box-skills .skills-info{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 100px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem;
+
+.skills-info h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
 }
-.skills-info h4{
- font-size: 3rem;
- font-weight: 800;
- line-height: 1;
- margin-bottom: 3rem;
-}
-.skills-info p{
-    font-size: 1.6rem;
-    font-weight: 600;
-    max-height: 100px;
-    line-height: 1.7;
-}
+
+
 .skills-info figure {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
     gap: 10px;
 }
 
 .skills-info figure img {
-    width: 60px; 
+    width: 60px;
     height: auto;
     max-width: 100%;
     transition: transform 0.3s ease;
@@ -392,12 +386,6 @@ span {
 
 .skills-info figure img:hover {
     transform: scale(1.1);
-}
-
-
-.skills{
-    background: var(--second-bg-color);
-    scroll-margin-top: 100px;
 }
 /* proyectos zona */
 .proyectos-box {
@@ -664,12 +652,22 @@ span {
         justify-content: center;
         width: 100%;
     }
+    .contenedor-skills {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .box-skills {
+        width: 90%; 
+    }
+
     .skills-info figure {
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: center;
     }
 
     .skills-info figure img {
-        width: 45px; 
+        width: 45px;
     }
 }
